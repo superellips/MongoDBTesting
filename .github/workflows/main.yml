@@ -30,7 +30,7 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Create mongo container
-      run: sudo docker -d -p 27017:27017 mongo:latest
+      run: docker -d -p 27017:27017 mongo:latest
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
